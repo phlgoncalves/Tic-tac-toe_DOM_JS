@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    background-color: #232323;
+    color: #ffa500;
+
+}
+
+#start{
+    background-color: #ffa500;
+    color: #232323;
+    border: 1px solid #eee;
+    border-radius: 20px;
+}
+
+#gameBoard {
+    background-color: rgb(94, 62, 2);
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    max-width: 19rem;
+}
+
+#gameBoard span {
+    background-color: #faebd7;
+    display: grid;
+    place-content: center;
+    /*centraliza os elementos quando usar o display grid */
+    font-size: 5rem;
+}
+
+#gameBoard span.win {
+    background-color: #d09652;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
